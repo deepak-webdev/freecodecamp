@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">deepak-webdev Survey Form</h1>
+            <p id="description" class="text-center">
+                Thanks for giving your time to improve my website
+            </p>
+        </header>
+        <div class="jumbotron">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="number-label">Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="age"
+              placeholder="Enter your age"
+              min="18"
+              max="60"
+            />
+          </div>
+
+          <div class="form-group">
+            <p>what's your current position?</p>
+            <select class="custom-select" id="dropdown">
+              <option disabled selected value="">Your current position</option>
+              <option value="student">Student</option>
+              <option value="learner">Learner</option>
+              <option value="teacher">Teacher</option>
+              <option value="developer">Developer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>Rate Us</p>
+            <label
+              ><input
+                type="radio"
+                name="rating"
+                class="input-radio"
+                checked
+              />10</label
+            ><br />
+            <label
+              ><input type="radio" name="rating" class="input-radio" />8</label
+            ><br />
+            <label
+              ><input type="radio" name="rating" class="input-radio" />5</label
+            >
+          </div>
+
+          <div class="form-group">
+            <p>Which is your favorite programming langauge?</p>
+            <label
+              ><input
+                type="checkbox"
+                name="favorite"
+                class="input-checkbox"
+                value="javascript"
+              />Javascript</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="favorite"
+                class="input-checkbox"
+                value="python"
+              />Python</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="favorite"
+                class="input-checkbox"
+                value="ruby"
+              />Ruby</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                name="favorite"
+                class="input-checkbox"
+                value="nodejs"
+              />Nodejs</label
+            >
+          </div>
+
+          <div class="fomr-group">
+            <p>Drop your comments here</p>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="64"
+              rows="5"
+              class="input-textarea"
+              placeholder="Enter your comments....."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button
+              type="submit"
+              id="submit"
+              class="btn btn-primary btn-block mt-4"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

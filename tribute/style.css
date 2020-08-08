@@ -1,0 +1,23 @@
+#title {
+    font-size: 2.2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin: 14px 0 5px 0;
+}
+
+#headline,
+h3 {
+    font-size: 1.2rem;
+}
+
+ul {
+    line-height: 1.6;
+}
